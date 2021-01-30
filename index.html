@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="demo">
+        <div id="seat-map">
+            <div class="front">SCREEN</div>
+        </div>
+        <div class="booking-details">
+            <p>Movie: <span> KGF Chapter-2</span></p>
+            <p>Show: <span>OCT 24-Morning 11:30</span></p>
+            <p>Seat: </p>
+            <ul id="selected-seats"></ul>
+            <p>Tickets: <span id="counter">0</span></p>
+            <p>Total: <b>&#x20B9; <span id="total">0</span></b></p>
+            <div id="reserved">
+                <label class="switch">
+                    <input type="checkbox" id="mycheckbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>
+                    <em>Reserved Booking</em>
+                </p>
+            </div>
+            <button class="checkout-button">BUY</button>
+            <div id="legend"></div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="poster">
+            <img src="./poster.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Ticket -->
+    <div class="ticket">
+        <div class="close-button">
+            <button>x</button>
+        </div>
+        <div class="ticket__content">
+            <div id="info">
+                <!-- <h1>KGF Chapter-2</h1>
+                <p>Theater Chaitanya Ganesh</p>
+                <p>Show: OCT 24-Morning 11:30</p>
+                <p id="seats"></p> -->
+            </div>
+            <div id="poster">
+                <img id="inner-poster" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+    integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+    crossorigin="anonymous"></script>
+<script src="jquery.seat-charts.js"></script>
+<script src="app.js"></script>
+
+</html>
